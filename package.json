@@ -1,0 +1,19 @@
+{
+  "name": "kofi-react-widget",
+  "version": "1.0.0",
+  "description": "React floating widget component that accepts donations to your Ko-fi account without leaving your app.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "author": "Rodrigo Guerreiro",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^19.0.1",
+    "react": "^19.0.0",
+    "typescript": "^5.7.2"
+  }
+}
