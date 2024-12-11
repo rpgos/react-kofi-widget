@@ -2,18 +2,25 @@
   "name": "kofi-react-widget",
   "version": "1.0.0",
   "description": "React floating button component to accept donations to your Ko-fi account without leaving your app.",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/kofi-react-widget.d.ts",
   "scripts": {
-    "test": ""
+    "rollup": "rollup -c --bundleConfigAsCjs"
   },
   "author": "Rodrigo Guerreiro",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.1",
     "@types/react": "^19.0.1",
     "react": "^19.0.0",
+    "rollup": "^4.28.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.8.1",
     "typescript": "^5.7.2"
   }
 }
