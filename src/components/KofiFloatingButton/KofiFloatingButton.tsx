@@ -6,14 +6,14 @@ declare global {
   }
 }
 
-interface KofiButtonProps {
+interface KofiFloatingButtonProps {
   background?: string
   textColor?: string
   text?: string
   username: string
 }
 
-export default function KofiFloatingButton({ background, textColor, username, text }: KofiButtonProps) {
+export default function KofiFloatingButton({ background, textColor, username, text }: KofiFloatingButtonProps) {
 
   const drawWidget = () => {
     window.kofiWidgetOverlay.draw(username, {
