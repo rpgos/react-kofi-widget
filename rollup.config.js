@@ -32,18 +32,8 @@ export default [
     external: ["react", "react-dom"],
   },
   {
-    input: "./dist/index.d.ts",
-    output: [{ file: "dist/kofi-react-widget.d.ts", format: "es" }],
-    plugins: [dts(),
-      {
-        name: "fix-dts-paths",
-        resolveId(source) {
-          if (source.includes("../")) {
-            return source.replace("../", "./");
-          }
-          return null;
-        },
-      },
-    ],
+    input: "src/index.ts",
+    output: [{ file: "dist/types.d.ts", format: "es" }],
+    plugins: [dts()]
   },
 ];
