@@ -1,6 +1,6 @@
 {
   "name": "kofi-react-widget",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React floating button component to accept donations to your Ko-fi account without leaving your app.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

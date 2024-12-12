@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 declare global {
   interface Window {
@@ -14,23 +14,18 @@ interface KofiFloatingButtonProps {
 }
 
 export default function KofiFloatingButton({ background, textColor, username, text }: KofiFloatingButtonProps) {
-
-  const drawWidget = () => {
-    setTimeout(() => {
-      window.kofiWidgetOverlay.draw(username, {
-        'type': 'floating-chat',
-        'floating-chat.donateButton.text': text || '',
-        'floating-chat.donateButton.background-color': background || '#00b9fe',
-        'floating-chat.donateButton.text-color': textColor || '#FFF'
-      })
-    }, 500)
-
-    return true
-  }
+  useEffect(() => {
+    window.kofiWidgetOverlay.draw(username, {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': text || '',
+      'floating-chat.donateButton.background-color': background || '#00b9fe',
+      'floating-chat.donateButton.text-color': textColor || '#FFF'
+    })
+  }, [])
 
   return (
     <>
-      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' onLoad={drawWidget} async />
+      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' />
     </>
   )
 }
