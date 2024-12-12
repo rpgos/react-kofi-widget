@@ -30,8 +30,7 @@ export default function KofiFloatingButton({ background, textColor, username, te
 
   return (
     <>
-      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' async />
-      {drawWidget()}
+      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' onLoad={drawWidget} async />
     </>
   )
 }
