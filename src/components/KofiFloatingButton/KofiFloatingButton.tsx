@@ -16,17 +16,21 @@ interface KofiFloatingButtonProps {
 export default function KofiFloatingButton({ background, textColor, username, text }: KofiFloatingButtonProps) {
 
   const drawWidget = () => {
-    window.kofiWidgetOverlay.draw(username, {
-      'type': 'floating-chat',
-      'floating-chat.donateButton.text': text || '',
-      'floating-chat.donateButton.background-color': background || '#00b9fe',
-      'floating-chat.donateButton.text-color': textColor || '#FFF'
-    })
+    setTimeout(() => {
+      window.kofiWidgetOverlay.draw(username, {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': text || '',
+        'floating-chat.donateButton.background-color': background || '#00b9fe',
+        'floating-chat.donateButton.text-color': textColor || '#FFF'
+      })
+    }, 500)
+
+    return true
   }
 
   return (
     <>
-      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' />
+      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' async />
       {drawWidget()}
     </>
   )
