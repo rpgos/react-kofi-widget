@@ -26,8 +26,10 @@ Check below for examples.
 
 ## Examples
 
-![alt text](<Screenshot 2024-12-12 at 17.16.05.png>)
-![alt text](<Screenshot 2024-12-12 at 17.51.26.png>)
-![alt text](<Screenshot 2024-12-12 at 17.57.53.png>)
+You can see a working example [here](https://kinggizzardlastrelease.vercel.app/).
 
-![alt text](<Screenshot 2024-12-12 at 17.16.21.png>)
+![](screenshots/blue.png)
+![](screenshots/yellow.png)
+![](screenshots/bluenotext.png)
+
+![](screenshots/fullwidget.png)
