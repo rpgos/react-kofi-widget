@@ -6,7 +6,7 @@ declare global {
   }
 }
 
-interface KofiFloatingButtonProps {
+export interface KofiFloatingButtonProps {
   background?: string
   textColor?: string
   text?: string
