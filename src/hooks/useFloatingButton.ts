@@ -20,6 +20,7 @@ export function useFloatingButton({ username, background, textColor, text }: Kof
   const fixIframe = () => {
     return setInterval(() => {
       document.getElementsByClassName('floatingchat-container')[0].setAttribute('style', 'color-scheme: normal;')
+      document.getElementsByClassName('floatingchat-container-mobi')[0].setAttribute('style', 'color-scheme: normal;')
 
       if(retries.current >= 5) {
         clearInterval(intervalId.current)
