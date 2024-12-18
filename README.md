@@ -1,6 +1,6 @@
 # kofi-react-widget
 
-React floating button component to accept donations to your Ko-fi account without leaving your app. __The solution for React apps has a visual bug__. The code from Ko-fi itself produces the bug in react apps.
+React floating button component to accept donations to your Ko-fi account without leaving your app. Works on both Next.js and pure React apps, but check out how to use it below because, for now, it's a bit different for each of them.
 Check below for examples.
 
 
@@ -18,7 +18,7 @@ Check below for examples.
         )
     }
 
-### In a React app (still has a visual bug, I'm trying to talk with Ko-fi about it)
+### In a React app
 
 You can use the custom hook in your App component like so:
 
