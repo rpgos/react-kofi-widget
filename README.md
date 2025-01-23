@@ -8,7 +8,9 @@ Check below for examples.
 
 ### In a Nextjs app
 
-    import { KofiFloatingButton } from "kofi-react-widget";
+Import the component from `kofi-react-widget/next`
+
+    import { KofiFloatingButton } from "kofi-react-widget/next";
     
     export default YourComponent() {
         ...
@@ -20,15 +22,16 @@ Check below for examples.
 
 ### In a React app
 
-You can use the custom hook in your App component like so:
+Import the component from `kofi-react-widget/react`
 
-    import { useFloatingButton } from "kofi-react-widget";
+    import { KofiFloatingButton } from "kofi-react-widget/react";
 
     ...
 
     function App() {
-        useFloatingButton({ username: 'rodribuilds', text: '...', ... })
+        <KofiFloatingButton username="rodribuilds" background="#fbbf24" textColor="#323842" text="Coffee?" />
         ...
+    }
 
     
 ### Props
