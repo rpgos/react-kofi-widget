@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2016",
     "jsx": "react",
-    "module": "ESNext",
+    "module": "NodeNext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -11,7 +11,7 @@
     "declarationDir": "dist",
     "sourceMap": true,
     "outDir": "dist",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
   }

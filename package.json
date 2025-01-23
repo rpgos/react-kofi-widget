@@ -7,6 +7,14 @@
     "url": "https://github.com/rpgos/react-kofi-widget"
   },
   "main": "dist/cjs/index.js",
+  "exports": {
+    "./next": {
+      "default": "./dist/next.js"
+    },
+    "./react": {
+      "default": "./dist/react.js"
+    }
+  },
   "module": "dist/esm/index.js",
   "types": "dist/types.d.ts",
   "scripts": {
