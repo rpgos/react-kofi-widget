@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { KofiFloatingButtonProps } from '../KofiFloatingButton/KofiFloatingButton';
 
 declare global {
   interface Window {
@@ -7,14 +8,7 @@ declare global {
   }
 }
 
-export interface KofiFloatingButtonProps {
-  background?: string
-  textColor?: string
-  text?: string
-  username: string
-}
-
-export default function KofiFloatingButton({ background, textColor, username, text }: KofiFloatingButtonProps) {
+export default function KofiFloatingButtonReact({ background, textColor, username, text }: KofiFloatingButtonProps) {
   const intervalId = useRef<number | undefined>(undefined)
   const retries = useRef<number>(0)
 

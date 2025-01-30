@@ -1,2 +1,2 @@
-export * from './next'
-export * from './react'
+export { KofiFloatingButton } from './components'
+export { KofiFloatingButtonReact } from './components'

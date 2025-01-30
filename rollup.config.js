@@ -4,8 +4,18 @@ import typescript from "@rollup/plugin-typescript";
 import { dts } from "rollup-plugin-dts";
 import terser from "@rollup/plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import packageJson from "./package.json";
 
-const packageJson = require("./package.json");
+const commonConfig = {
+  plugins: [
+    peerDepsExternal(),
+    resolve(),
+    commonjs(),
+    typescript(),
+    terser(),
+  ],
+  external: ["react", "react-dom"],
+}
 
 export default [
   {
@@ -22,14 +32,7 @@ export default [
         sourcemap: true,
       },
     ],
-    plugins: [
-      peerDepsExternal(),
-      resolve(),
-      commonjs(),
-      typescript(),
-      terser(),
-    ],
-    external: ["react", "react-dom"],
+    ...commonConfig
   },
   {
     input: "src/index.ts",

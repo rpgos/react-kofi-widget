@@ -7,14 +7,6 @@
     "url": "https://github.com/rpgos/react-kofi-widget"
   },
   "main": "dist/cjs/index.js",
-  "exports": {
-    "./next": {
-      "default": "./dist/next.js"
-    },
-    "./react": {
-      "default": "./dist/react.js"
-    }
-  },
   "module": "dist/esm/index.js",
   "types": "dist/types.d.ts",
   "scripts": {
@@ -40,6 +32,10 @@
     "tslib": "^2.8.1",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.21.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "keywords": [
     "kofi",
