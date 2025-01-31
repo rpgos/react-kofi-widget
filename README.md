@@ -8,9 +8,9 @@ Check below for examples.
 
 ### In a Nextjs app
 
-Import the component from `kofi-react-widget/next`
+Import `KofiFloatingButton` from `kofi-react-widget`
 
-    import { KofiFloatingButton } from "kofi-react-widget/next";
+    import { KofiFloatingButton } from "kofi-react-widget";
     
     export default YourComponent() {
         ...
@@ -22,14 +22,14 @@ Import the component from `kofi-react-widget/next`
 
 ### In a React app
 
-Import the component from `kofi-react-widget/react`
+Import `KofiFloatingButtonReact` from `kofi-react-widget`
 
-    import { KofiFloatingButton } from "kofi-react-widget/react";
+    import { KofiFloatingButtonReact } from "kofi-react-widget";
 
     ...
 
     function App() {
-        <KofiFloatingButton username="rodribuilds" background="#fbbf24" textColor="#323842" text="Coffee?" />
+        <KofiFloatingButtonReact username="rodribuilds" background="#fbbf24" textColor="#323842" text="Coffee?" />
         ...
     }
 
